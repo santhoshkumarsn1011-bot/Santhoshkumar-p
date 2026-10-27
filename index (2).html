@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Santhosh Kumar P | Video Editor, Photo Editor & 3D Artist</title>
+  <meta name="description" content="Portfolio of Santhosh Kumar P - Video Editor, Photo Editor and 3D Artist." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar" id="navbar">
+    <a href="#home" class="logo">Santhosh<span>.</span></a>
+    <nav>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact" class="btn btn-small">Hire Me</a></li>
+      </ul>
+    </nav>
+    <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-glow glow-1"></div>
+    <div class="hero-glow glow-2"></div>
+    <div class="hero-content reveal">
+      <p class="hello">Hello, I'm</p>
+      <h1>Santhosh Kumar <span class="grad">P</span></h1>
+      <h2 class="typing">I'm a <span id="typed"></span><span class="cursor">|</span></h2>
+      <p class="hero-text">
+        I turn raw footage, photos and ideas into polished visuals that tell a story.
+        Cinematic edits, clean retouching and eye-catching 3D art.
+      </p>
+      <div class="hero-buttons">
+        <a href="#work" class="btn">View My Work</a>
+        <a href="#contact" class="btn btn-outline">Contact Me</a>
+      </div>
+    </div>
+    <div class="hero-image reveal">
+      <!-- Replace with your photo: <img src="images/santhosh.jpg" alt="Santhosh Kumar P" /> -->
+      <div class="photo-frame">
+        <div class="photo-placeholder">SK</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="container about-grid">
+      <div class="about-image reveal">
+        <div class="about-box">
+          <span class="big-number" data-count="3">0</span>
+          <p>Years of creative experience</p>
+        </div>
+      </div>
+      <div class="about-text reveal">
+        <p class="section-tag">About Me</p>
+        <h2 class="section-title">Creating visuals that people remember</h2>
+        <p>
+          I'm <strong>Santhosh Kumar P</strong>, a creative professional who works across
+          video editing, photo editing and 3D art. I love mixing storytelling with
+          technical detail so every frame feels intentional.
+        </p>
+        <p>
+          Whether it's a YouTube video, a wedding film, a product ad, a retouched portrait
+          or a 3D scene, I focus on quality, timing and clear communication so the final
+          result matches your vision.
+        </p>
+        <div class="stats">
+          <div><h3 data-count="50">0</h3><span>Projects</span></div>
+          <div><h3 data-count="25">0</h3><span>Happy Clients</span></div>
+          <div><h3 data-count="3">0</h3><span>Disciplines</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="section alt" id="services">
+    <div class="container">
+      <p class="section-tag center">What I Do</p>
+      <h2 class="section-title center">My Services</h2>
+      <div class="cards">
+        <article class="card reveal">
+          <div class="icon">🎬</div>
+          <h3>Video Editing</h3>
+          <p>Cuts, transitions, colour grading, sound design, motion graphics and subtitles for YouTube, reels, ads and films.</p>
+        </article>
+        <article class="card reveal">
+          <div class="icon">📷</div>
+          <h3>Photo Editing</h3>
+          <p>Retouching, colour correction, background removal, composites and social-media-ready photo edits.</p>
+        </article>
+        <article class="card reveal">
+          <div class="icon">🧊</div>
+          <h3>3D Art</h3>
+          <p>Modeling, texturing, lighting and rendering for characters, products, environments and animations.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORK -->
+  <section class="section" id="work">
+    <div class="container">
+      <p class="section-tag center">Portfolio</p>
+      <h2 class="section-title center">Selected Work</h2>
+
+      <div class="filters" id="filters">
+        <button class="filter active" data-filter="all">All</button>
+        <button class="filter" data-filter="video">Video</button>
+        <button class="filter" data-filter="photo">Photo</button>
+        <button class="filter" data-filter="3d">3D Art</button>
+      </div>
+
+      <!--
+        HOW TO ADD YOUR OWN WORK
+        - Photo / 3D render: set data-type="image" and data-src="images/yourfile.jpg"
+        - Video (YouTube): set data-type="youtube" and data-src="https://www.youtube.com/embed/VIDEO_ID"
+        - Video (your own file): set data-type="video" and data-src="videos/yourfile.mp4"
+        - To show a thumbnail, add style="background-image:url('images/thumb.jpg')" to the .thumb div
+      -->
+      <div class="grid" id="grid">
+        <div class="item" data-category="video" data-type="youtube" data-src="https://www.youtube.com/embed/dQw4w9WgXcQ" data-title="Cinematic Travel Film">
+          <div class="thumb t1"><span class="play">▶</span></div>
+          <div class="overlay"><span>Video</span><h3>Cinematic Travel Film</h3></div>
+        </div>
+        <div class="item" data-category="photo" data-type="image" data-src="" data-title="Portrait Retouch">
+          <div class="thumb t2"></div>
+          <div class="overlay"><span>Photo</span><h3>Portrait Retouch</h3></div>
+        </div>
+        <div class="item" data-category="3d" data-type="image" data-src="" data-title="Sci-Fi Character Render">
+          <div class="thumb t3"></div>
+          <div class="overlay"><span>3D Art</span><h3>Sci-Fi Character Render</h3></div>
+        </div>
+        <div class="item" data-category="video" data-type="youtube" data-src="https://www.youtube.com/embed/dQw4w9WgXcQ" data-title="Product Ad Edit">
+          <div class="thumb t4"><span class="play">▶</span></div>
+          <div class="overlay"><span>Video</span><h3>Product Ad Edit</h3></div>
+        </div>
+        <div class="item" data-category="photo" data-type="image" data-src="" data-title="Colour Grading Set">
+          <div class="thumb t5"></div>
+          <div class="overlay"><span>Photo</span><h3>Colour Grading Set</h3></div>
+        </div>
+        <div class="item" data-category="3d" data-type="image" data-src="" data-title="Low-Poly Environment">
+          <div class="thumb t6"></div>
+          <div class="overlay"><span>3D Art</span><h3>Low-Poly Environment</h3></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section alt" id="skills">
+    <div class="container skills-grid">
+      <div class="reveal">
+        <p class="section-tag">Skills</p>
+        <h2 class="section-title">Tools &amp; Expertise</h2>
+        <p class="muted">Software I use every day to deliver professional results.</p>
+        <div class="tools">
+          <span>Premiere Pro</span><span>After Effects</span><span>DaVinci Resolve</span>
+          <span>Photoshop</span><span>Lightroom</span><span>Blender</span>
+          <span>Maya</span><span>Substance Painter</span>
+        </div>
+      </div>
+      <div class="bars reveal">
+        <div class="bar"><div class="bar-top"><span>Video Editing</span><span>90%</span></div><div class="track"><div class="fill" data-width="90"></div></div></div>
+        <div class="bar"><div class="bar-top"><span>Photo Editing</span><span>85%</span></div><div class="track"><div class="fill" data-width="85"></div></div></div>
+        <div class="bar"><div class="bar-top"><span>3D Modeling</span><span>80%</span></div><div class="track"><div class="fill" data-width="80"></div></div></div>
+        <div class="bar"><div class="bar-top"><span>Motion Graphics</span><span>75%</span></div><div class="track"><div class="fill" data-width="75"></div></div></div>
+        <div class="bar"><div class="bar-top"><span>Colour Grading</span><span>85%</span></div><div class="track"><div class="fill" data-width="85"></div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section" id="contact">
+    <div class="container contact-grid">
+      <div class="reveal">
+        <p class="section-tag">Contact</p>
+        <h2 class="section-title">Let's work together</h2>
+        <p class="muted">Have a project in mind? Send me a message and I'll get back to you soon.</p>
+        <ul class="contact-list">
+          <li>📧 <a href="mailto:yourmail@example.com">yourmail@example.com</a></li>
+          <li>📞 <a href="tel:+910000000000">+91 00000 00000</a></li>
+          <li>📍 Tamil Nadu, India</li>
+        </ul>
+        <div class="socials">
+          <a href="#" aria-label="Instagram">Instagram</a>
+          <a href="#" aria-label="YouTube">YouTube</a>
+          <a href="#" aria-label="Behance">Behance</a>
+          <a href="#" aria-label="ArtStation">ArtStation</a>
+        </div>
+      </div>
+      <form class="form reveal" id="contactForm">
+        <input type="text" id="name" placeholder="Your Name" required />
+        <input type="email" id="email" placeholder="Your Email" required />
+        <input type="text" id="subject" placeholder="Subject" />
+        <textarea id="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+        <p class="form-note" id="formNote"></p>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Santhosh Kumar P. All rights reserved.</p>
+  </footer>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="close" id="closeLightbox" aria-label="Close">&times;</button>
+    <div class="lightbox-body" id="lightboxBody"></div>
+    <p class="lightbox-title" id="lightboxTitle"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
